@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+  
+ <hibernate-mapping package="hibernate">  
+  <class name="Trade" table="TRADE">  
+    <id name="tradeId" column="tradeId" type="string">  
+     <generator class="assigned"></generator>  
+    </id>  
+            
+    <property name="version" column="version" type="int"></property>  
+    <property name="counterPartyId" column="counterPartyId" type="string"></property>  
+    <property name="bookId" column="bookId" type="string"></property>
+    <property name="maturityDate" column="maturityDate" type="date"></property>
+    <property name="createdDate" column="createdDate" type="date"></property>
+    <property name="expired"  column="expired" type="char"></property>
+            
+  </class>  
+            
+ </hibernate-mapping>

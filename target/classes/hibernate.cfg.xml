@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>  
+  
+    <session-factory>  
+    	<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="hbm2ddl.auto">update</property>  
+        <property name="connection.url">jdbc:oracle:thin:@localhost:1521:oracle</property>  
+        <property name="connection.username">TEST</property>  
+        <property name="connection.password">SAI123</property>  
+        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>  
+    <mapping resource="hibernate/Trade.hbm.xml"/>  
+    </session-factory>  
+</hibernate-configuration>  
